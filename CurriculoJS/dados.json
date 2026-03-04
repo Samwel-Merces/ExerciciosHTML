@@ -1,0 +1,17 @@
+{
+"nome":"samuel de souza",
+"datanascimento":"31/10/2002",
+"email":"samuelmerces321@gmail.com",
+"fotoperfil":"/img/fotoperfil.jpg",
+"Telefone":1170707070,
+"linkedin":"in/samuel-mercês-21a23b236",
+"github":"github.com/Samwel-Merces",
+"conhecimentos":["Java","HTML","CSS","Javascript"],
+"experiencias profissionais":["operador de loja","auxiliar admnistrativo"],
+"formacao academica": {
+"nome curso":"ads",
+"instituicao":"senac",
+"data inicio":"02/02/2025",
+"data termino":"01/06/2027"
+}
+}

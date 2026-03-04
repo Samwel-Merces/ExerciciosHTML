@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+    /* Padding na pagina */
+  padding: 20px;
+  /* fundo do body em gradiente */
+  background-image: linear-gradient(rgba(57, 116, 204, 0.863),rgba(128, 0, 128, 0.623));
+    height: 100vh; 
+}
+
+#imgUser{
+    /* tamanho da imagem do dono do curriculo */
+    height: 100px;
+    width: 100px;
+}
+
+#btnCarregar{
+  border-radius: 8px;
+  border-color: rgb(0, 153, 255);
+  background-color: rgb(248, 248, 248);
+  color: rgb(0, 153, 255);
+  height: 30px;
+  width: 150px;
+  font-weight: bold;
+}
+
+#btnCarregar:hover{
+  background-color: rgb(0, 153, 255);
+  color: rgb(248, 248, 248);
+  cursor: pointer;
+}
+
+#btnCarregar:active{
+  background-color:rgba(128, 0, 128, 0.623);
+  color: rgb(248, 248, 248);
+  transform: scale(0.95);
+  border: rgba(128, 0, 128, 0.623);
+}
+
+.container {
+    /* Display Grid, faz com que a pagina seja dividida em "Grades"*/
+  display: grid;
+    /* Cria duas colunas a primeira com 1 fração do espaço
+    a segunda com 2 frações do espaço, sendo melhor para resposividade*/
+  grid-template-columns: 1fr 2fr;
+  /*criação de 2 Linhas a primeira é baseada no conteudo, no caso o Header
+  a Segunda Linha ocupa o espaço restante*/
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Cabeçalho ocupa as duas colunas */
+.header {
+    /* Faz com que o header ocupe as "3 Linhas da pagina" */
+  grid-column: 1 / 3;
+  text-align: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.foto {
+  background-color: #201e1e;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.box {
+  border: 1px solid #333;
+  padding: 15px;
+  background-color: white;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+h2, h3 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.box {
+  background-color: #c5c4c4;
+}

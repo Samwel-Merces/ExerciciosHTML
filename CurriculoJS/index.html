@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Currículo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- caixa Principal onde estão todos posicionados todos os outros elementos -->
+  <div class="container">
+    <!-- Caixa Header / cabeçalho da pagina com Nome Completo -->
+    <header class="header">
+      <h1 id="nome" >NOME COMPLETO</h1>
+      <input type="button" value="Carregar Dados" id="btnCarregar">
+    </header>
+    <!-- div caixa mae das div's com foto, Dados Pessoais e Conhecimentos -->
+    <div class="left">
+        <!-- Div para adicionar uma foto do usuario -->
+      <div class="foto">
+        <img src="img/Image-Source-PlusPNG.com.png" id="imgUser" alt="Imagem do Usuario">
+      </div>
+
+      <div class="box">
+        <ul>
+            <li id="dtn">Data nascimento</li>
+            <li id="em">E-mail</li>
+            <li id="tele">Telefone</li>
+            <li id="link">Linkedin</li>
+            <li id="git">Github</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Conhecimentos</h3>
+        <ul>
+          <li>Java</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+
+    </div>
+    <!-- Div com tag main, porque respresenta o conteudo principal da pagina
+     mae de mais 2 div's com experiência e Formação Academica -->
+    <main class="right">
+
+      <div class="box">
+        <h2>Experiências profissionais</h2>
+        <ul>
+          <li>Cargo</li>
+          <li>Empresa</li>
+          <li>Descrição das atividades</li>
+          <li>Data início / Data término</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h2>Formação acadêmica</h2>
+        <ul>
+          <li>Nome curso</li>
+          <li>Instituição</li>
+          <li>Data término (ou em andamento)</li>
+        </ul>
+      </div>
+
+    </main>
+
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>
