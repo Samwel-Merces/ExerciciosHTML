@@ -10,13 +10,13 @@ body {
   padding: 20px;
   /* fundo do body em gradiente */
   background-image: linear-gradient(rgba(57, 116, 204, 0.863),rgba(128, 0, 128, 0.623));
-    height: 100vh; 
+    height: 100dvh; 
 }
 
 #imgUser{
     /* tamanho da imagem do dono do curriculo */
-    height: 100px;
-    width: 100px;
+    height: 140px;
+    width: 130px;
 }
 
 #btnCarregar{
