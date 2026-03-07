@@ -11,7 +11,7 @@ body {
   padding: 20px;
   /* fundo do body em gradiente */
   background-image: linear-gradient(rgba(57, 116, 204, 0.863),rgba(128, 0, 128, 0.623));
-    height: 100dvh; 
+    height: 100dvh;
 }
 
 #nome{
@@ -58,7 +58,7 @@ body {
   a Segunda Linha ocupa o espaço restante*/
   grid-template-rows: auto 1fr;
   gap: 20px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
 }
 
