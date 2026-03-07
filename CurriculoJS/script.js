@@ -13,6 +13,7 @@ window.document.getElementById("tele").textContent = dados.Telefone;
 window.document.getElementById("git").textContent = dados.github;
 window.document.getElementById("link").textContent = dados.linkedin;
 
+//lista conhecimentos
 let lista = document.getElementById("listaConhecimentos");
 
 lista.innerHTML = ""; //Limpeza da lista antes de rodar o forEach
@@ -25,7 +26,7 @@ dados.conhecimentos.forEach(conhecimento => {
     lista.appendChild(li);
 
 });
-
+//lista experiências
 
 let lista2 = document.getElementById('listaExperiencias');
 
@@ -37,12 +38,24 @@ dados.experienciasProfissionais.forEach(exp =>{
 
     lista2.appendChild(li);
 
+    //lista formação
+let lista3 = document.getElementById("formacao");
+lista3.innerHTML = " ";
+
+Object.entries(dados["formacao academica"]).forEach(items =>{
+
+    let li = document.createElement("li");
+    li.textContent = items[0] + ": " + items[1];
+
+    lista3.appendChild(li)
 });
 
 
+});
+
+console.log(dados["formacao academica"])
+
 //Conhecimentos 
-
-
 
 });
 
@@ -57,8 +70,8 @@ const dados = {
 "conhecimentos":["Java","HTML","CSS","Javascript"],
 "experienciasProfissionais":["operador de loja","auxiliar admnistrativo"],
 "formacao academica": {
-"nome curso":"ads",
-"instituicao":"senac",
+"nome curso":"analise e desenvolvimento de sistemas",
+"instituicao":"Senac",
 "data inicio":"02/02/2025",
 "data termino":"01/06/2027"
 }

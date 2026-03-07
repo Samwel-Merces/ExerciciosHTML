@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
+  color: rgb(59, 26, 85);
 }
 
 body {
@@ -11,6 +12,11 @@ body {
   /* fundo do body em gradiente */
   background-image: linear-gradient(rgba(57, 116, 204, 0.863),rgba(128, 0, 128, 0.623));
     height: 100dvh; 
+}
+
+#nome{
+  color: rgb(210, 192, 218);
+  text-shadow: 2px 1px 1px black;
 }
 
 #imgUser{
@@ -81,13 +87,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
 }
 
 .box {
   border: 1px solid #333;
   padding: 15px;
   background-color: white;
+  border-radius: 12px;
+  box-shadow: 1px 1px 1px black;
 }
 
 h1 {
