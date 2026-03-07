@@ -15,6 +15,8 @@ window.document.getElementById("link").textContent = dados.linkedin;
 
 let lista = document.getElementById("listaConhecimentos");
 
+lista.innerHTML = ""; //Limpeza da lista antes de rodar o forEach
+
 dados.conhecimentos.forEach(conhecimento => {
 
     let li = document.createElement("li");
@@ -26,6 +28,8 @@ dados.conhecimentos.forEach(conhecimento => {
 
 
 let lista2 = document.getElementById('listaExperiencias');
+
+lista2.innerHTML = ""; //Limpeza da lista antes de rodar o forEach
 
 dados.experienciasProfissionais.forEach(exp =>{
     let li = document.createElement("li");
