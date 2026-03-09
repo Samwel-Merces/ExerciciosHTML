@@ -1,79 +1,63 @@
+document.getElementById("btnCarregar").addEventListener("click", () => {
+
+fetch("dados.json")
+.then(resposta => resposta.json())
+.then(dados => {
+
+document.getElementById("nome").textContent = dados.nome.toUpperCase();
+
+let img = document.getElementById("imgUser");
+img.src = dados.fotoperfil;
+img.style.borderRadius = "100px";
+
+document.getElementById("dtn").textContent = dados.datanascimento;
+document.getElementById("em").textContent = dados.email;
+document.getElementById("tele").textContent = dados.Telefone;
+document.getElementById("git").textContent = dados.github;
+document.getElementById("link").textContent = dados.linkedin;
 
 
-// window.alert("Pagina Carregada")
-window.document.getElementById("btnCarregar").addEventListener("click", () => {
-window.document.getElementById("nome").textContent = dados.nome.toUpperCase()
-//carregamento da image
- var img = window.document.getElementById("imgUser");
- img.src = dados.fotoperfil
- img.style.borderRadius = '100px'
-window.document.getElementById("dtn").textContent = dados.datanascimento;
-window.document.getElementById("em").textContent = dados.email;
-window.document.getElementById("tele").textContent = dados.Telefone;
-window.document.getElementById("git").textContent = dados.github;
-window.document.getElementById("link").textContent = dados.linkedin;
-
-//lista conhecimentos
+// conhecimentos
 let lista = document.getElementById("listaConhecimentos");
-
-lista.innerHTML = ""; //Limpeza da lista antes de rodar o forEach
+lista.innerHTML = "";
 
 dados.conhecimentos.forEach(conhecimento => {
 
-    let li = document.createElement("li");
-    li.textContent = conhecimento;
+let li = document.createElement("li");
+li.textContent = conhecimento;
 
-    lista.appendChild(li);
+lista.appendChild(li);
 
 });
-//lista experiências
 
-let lista2 = document.getElementById('listaExperiencias');
 
-lista2.innerHTML = ""; //Limpeza da lista antes de rodar o forEach
+// experiencias
+let lista2 = document.getElementById("listaExperiencias");
+lista2.innerHTML = "";
 
-dados.experienciasProfissionais.forEach(exp =>{
-    let li = document.createElement("li");
-    li.textContent = exp;
+dados.experienciasProfissionais.forEach(exp => {
 
-    lista2.appendChild(li);
+let li = document.createElement("li");
+li.textContent = exp;
 
-    //lista formação
+lista2.appendChild(li);
+
+});
+
+
+// formação
 let lista3 = document.getElementById("formacao");
-lista3.innerHTML = " ";
+lista3.innerHTML = "";
 
-Object.entries(dados["formacao academica"]).forEach(items =>{
+Object.entries(dados.formacaoAcademica).forEach(item => {
 
-    let li = document.createElement("li");
-    li.textContent = items[0] + ": " + items[1];
+let li = document.createElement("li");
+li.textContent = item[0] + ": " + item[1];
 
-    lista3.appendChild(li)
-});
-
+lista3.appendChild(li);
 
 });
 
-console.log(dados["formacao academica"])
-
-//Conhecimentos 
-
 });
 
-const dados = {
-"nome":"samuel Mercês",
-"fotoperfil":"fotodeperfil.jpg",
-"datanascimento":"31/10/2002",
-"email":"samuelmerces321@gmail.com",
-"Telefone":"(11) 7070-7070",
-"linkedin":"in/samuel-mercês-21a23b236",
-"github":"github.com/Samwel-Merces",
-"conhecimentos":["Java","HTML","CSS","Javascript"],
-"experienciasProfissionais":["operador de loja","auxiliar admnistrativo"],
-"formacao academica": {
-"nome curso":"analise e desenvolvimento de sistemas",
-"instituicao":"Senac",
-"data inicio":"02/02/2025",
-"data termino":"01/06/2027"
-}
-}
-
+});
