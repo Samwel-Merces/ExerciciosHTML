@@ -73,8 +73,12 @@ section {
     background-color: rgba(20, 26, 26, 0.171);
     height: 35px;
     width: 250px;
-    
+    transition: border 0.3s ease;
+    outline: none;
+}
 
+#campoUser:focus{
+    border: 3px solid #6f4caf;
 }
 
 #campoPass{
@@ -84,8 +88,12 @@ section {
     background-color: rgba(20, 26, 26, 0.171);
     height: 35px;
     width: 250px;
+    outline: none;
+    transition: border 0.1s ease;
+}
 
-
+#campoPass:focus{
+    border: 3px solid #6f4caf;
 }
 
 #btnLogin{
@@ -93,7 +101,7 @@ section {
     margin-top: 10px;
     height: 40px;
     width: 90px;
-    border-radius: 12px;
+    border-radius: 15px;
     font-size: 20px;
     font-weight: bold;
     padding: 2px;
@@ -102,13 +110,14 @@ section {
 }
 
 #btnLogin:hover{
+    transform: scale(1.05);
     background-color: rgba(128, 128, 128, 0.308);
     cursor: pointer;
 }
 
 #btnLogin:active{
     background-color: rgb(132, 0, 255);
-    transform: translateY(4px);
+    transform: translateY(3px);
     color: aliceblue;
 }
 
