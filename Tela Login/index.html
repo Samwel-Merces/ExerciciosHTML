@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,30 @@
     <link rel="shortcut icon" href="img/11284777.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-       <h1>Bem Vindo</h1>
-        
+        <h1>Bem Vindo</h1>
+
     </header>
     <section>
         <div>
-        <h2 id="txtLogin">Login</h2>
-       </div>
-       <div>
-        <img src="img/11284777.png" alt="imagem Login" id="imgLogin">
-       </div>
-       <div id="campos">
-        <p id="erro"></p>
-        <input type="text" id="campoUser" placeholder="Username">
-        <input type="password" name="" id="campoPass" placeholder="password">
-        <input type="button" value="Login" id="btnLogin" onclick="verificarNome()">
-        <a href="#" id="Esqueceu">Esqueceu a Senha ?</a>
-       </div>
+            <h2 id="txtLogin">Login</h2>
+        </div>
+        <div>
+            <img src="img/11284777.png" alt="imagem Login" id="imgLogin">
+        </div>
+        <div id="campos">
+            <form action="">
+                <strong>
+                    <p id="erro"></p>
+                </strong>
+                <input type="text" id="campoUser" placeholder="Username" required>
+                <input type="password" name="" id="campoPass" placeholder="password" required>
+                <input type="submit" value="Login" id="btnLogin" onclick="verificarNome()">
+                <a href="#" id="Esqueceu">Esqueceu a Senha ?</a>
+            </form onsubmit="verificarNome(event)">
+        </div>
 
     </section>
     <footer>
@@ -33,6 +39,7 @@
 
     </footer>
     <script src="script.js"></script>
-    
+
 </body>
+
 </html>

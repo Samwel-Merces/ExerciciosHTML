@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    /* background-color: rgb(82, 167, 247); */
     background-image: url(img/background.svg);
     background-size: 200%;
     background-repeat: no-repeat;
@@ -38,8 +37,9 @@ h1{
 }
 
 section {
+    padding: 20px;
     border-radius: 15px;
-    background-image: linear-gradient(rgb(240, 195, 216),rgb(241, 241, 241));
+    background-image: linear-gradient(hsl(215, 31%, 84%),rgb(241, 241, 241));
     border: 4px solid rgb(11, 110, 224);
     width: 90%;
     max-width: 500px;
@@ -57,7 +57,7 @@ section {
 
 }
 
-#campos{
+#campos form{
     height: 200px;
     display: flex;
     flex-direction: column;
